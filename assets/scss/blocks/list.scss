@@ -1,0 +1,25 @@
+@tailwind components;
+
+@layer components {
+  .list {
+    @apply flex flex-col mr-3 lg:mr-8 flex-1;
+
+    &__item {
+      @apply before:block
+      before:content-['']
+      before:mr-3
+      before:min-w-[0.625rem]
+      before:min-h-[0.625rem]
+      before:border-2
+      before:border-red-900
+      before:border-2
+      before:rounded-full
+      flex
+      items-center
+      2xl:text-lg
+      mb-4
+      text-xs
+      last:mb-0;
+     }
+  }
+}
